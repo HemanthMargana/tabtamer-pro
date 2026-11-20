@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TabTamer Pro — All-in-One AdBlock, Visual Comfort & Tab Suite</title>
-  <meta name="description" content="Block ads & trackers, auto-group messy tabs, save RAM, apply smart dark mode & blue-light tint, and summarize any article in 1 click." />
+  <title>TabTamer Pro — Tab Hygiene, RAM Saver & Reading Comfort Suite</title>
+  <meta name="description" content="Auto-group messy tabs, save browser RAM, back up tab sessions, apply smart dark mode & blue-light tint, and summarize articles locally." />
   <style>
     :root {
       --bg: #0b1120;
@@ -14,7 +14,6 @@
       --muted: #94a3b8;
       --accent: #38bdf8;
       --gold: #fbbf24;
-      --green: #22c55e;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,7 +28,6 @@
     a { color: var(--accent); text-decoration: none; }
     .container { max-width: 1020px; margin: 0 auto; padding: 0 20px; }
 
-    /* Nav */
     nav {
       border-bottom: 1px solid var(--border);
       padding: 16px 0;
@@ -39,11 +37,7 @@
       backdrop-filter: blur(10px);
       z-index: 50;
     }
-    .nav-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; }
     .logo {
       font-weight: 800;
       font-size: 18px;
@@ -64,11 +58,7 @@
     .nav-links a { color: var(--muted); }
     .nav-links a:hover { color: var(--text); }
 
-    /* Hero */
-    .hero {
-      text-align: center;
-      padding: 72px 0 56px;
-    }
+    .hero { text-align: center; padding: 72px 0 56px; }
     .pill {
       display: inline-block;
       background: rgba(56, 189, 248, 0.12);
@@ -94,12 +84,7 @@
       max-width: 620px;
       margin: 0 auto 30px;
     }
-    .cta-group {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+    .cta-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
     .btn {
       padding: 13px 24px;
       border-radius: 10px;
@@ -112,23 +97,11 @@
     }
     .btn:hover { transform: translateY(-1px); opacity: 0.95; }
     .btn-primary { background: var(--accent); color: #0f172a; }
-    .btn-gold {
-      background: linear-gradient(135deg, #f59e0b, var(--gold));
-      color: #0f172a;
-    }
+    .btn-gold { background: linear-gradient(135deg, #f59e0b, var(--gold)); color: #0f172a; }
 
-    /* Features */
     .section { padding: 56px 0; }
-    .section-title {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    .section-sub {
-      text-align: center;
-      color: var(--muted);
-      margin-bottom: 36px;
-    }
+    .section-title { text-align: center; font-size: 28px; margin-bottom: 10px; }
+    .section-sub { text-align: center; color: var(--muted); margin-bottom: 36px; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -140,17 +113,9 @@
       border-radius: 14px;
       padding: 22px;
     }
-    .card h3 {
-      font-size: 17px;
-      margin-bottom: 8px;
-      color: var(--text);
-    }
-    .card p {
-      font-size: 14px;
-      color: var(--muted);
-    }
+    .card h3 { font-size: 17px; margin-bottom: 8px; color: var(--text); }
+    .card p { font-size: 14px; color: var(--muted); }
 
-    /* Pricing */
     .pricing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -164,10 +129,7 @@
       border-radius: 16px;
       padding: 28px;
     }
-    .price-card.featured {
-      border: 2px solid var(--gold);
-      position: relative;
-    }
+    .price-card.featured { border: 2px solid var(--gold); position: relative; }
     .tag {
       position: absolute;
       top: -12px;
@@ -179,11 +141,7 @@
       padding: 3px 10px;
       border-radius: 12px;
     }
-    .price {
-      font-size: 34px;
-      font-weight: 800;
-      margin: 10px 0 16px;
-    }
+    .price { font-size: 36px; font-weight: 800; margin: 10px 0 16px; }
     .price span { font-size: 14px; color: var(--muted); font-weight: 500; }
     .list {
       list-style: none;
@@ -195,7 +153,6 @@
       gap: 9px;
     }
 
-    /* Privacy Policy */
     .privacy-box {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -227,76 +184,87 @@
       <div class="nav-links">
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
+        <a href="#terms">Terms & Refunds</a>
         <a href="#privacy">Privacy Policy</a>
       </div>
     </div>
   </nav>
 
   <header class="hero container">
-    <div class="pill">Manifest V3 • 100% Local-First • Chrome, Edge & Brave</div>
-    <h1>Tame Tab Chaos, Block Ads & Protect Your Focus.</h1>
-    <p>Replace four bloated browser extensions with one lightweight toolkit: network ad-blocking, auto-tab grouping, RAM memory saver, smart dark mode, and instant article summaries.</p>
+    <div class="pill">Published on Chrome Web Store • Manifest V3 • 100% Local-First</div>
+    <h1>Organize Messy Tabs, Save RAM & Focus Better.</h1>
+    <p>A lightweight productivity suite for Chrome, Edge, and Brave: auto-group open tabs, suspend idle memory hogs, back up tab workspaces, and customize page reading comfort.</p>
     <div class="cta-group">
-      <!-- Replace # with your Chrome Web Store listing URL once approved -->
-      <a href="#pricing" class="btn btn-primary">Add to Browser — Free</a>
-      <a href="https://hk-digital.lemonsqueezy.com/checkout/buy/75f87dec-3c15-45c5-9bca-44f539d6b6b9" target="_blank" rel="noopener" class="btn btn-gold">★ Get Pro License</a>
+      <!-- Replace with your live Chrome Web Store listing URL -->
+      <a href="https://chromewebstore.google.com" target="_blank" rel="noopener" class="btn btn-primary">Install Free on Chrome Web Store</a>
+      <a href="#pricing" class="btn btn-gold">★ Lifetime Pro — $1.99</a>
     </div>
   </header>
 
   <section id="features" class="section container">
-    <h2 class="section-title">Everything Your Browser Was Missing</h2>
-    <p class="section-sub">Engineered for speed with zero background tracking or external servers.</p>
+    <h2 class="section-title">Built for Everyday Browser Productivity</h2>
+    <p class="section-sub">Fast, local-first tools with zero background tracking or external servers.</p>
     <div class="grid">
       <div class="card">
-        <h3>🛡️ Ad & Tracker Shield</h3>
-        <p>Blocks major ad networks and analytics trackers natively via Chrome's declarativeNetRequest engine, plus cosmetic cookie-banner hiding and a 1-click popup zapper.</p>
-      </div>
-      <div class="card">
-        <h3>🗂️ Tab Hygiene & RAM Saver</h3>
+        <h3>🗂️ Smart Tab Hygiene & RAM Saver</h3>
         <p>Close duplicate tabs in 1 click, auto-group tabs by website into color-coded groups, put idle tabs to sleep to free RAM, and save entire windows to your Session Vault.</p>
       </div>
       <div class="card">
-        <h3>🌗 Visual Comfort Studio</h3>
-        <p>Smart Dark Mode that preserves images/videos, an adjustable Blue-Light Night Tint slider, Focus Dimmer for distracting sidebars, and a distraction-free Reader View.</p>
+        <h3>🌗 Visual Comfort & Focus Studio</h3>
+        <p>Smart Dark Mode that preserves images and videos, an adjustable Blue-Light Night Tint slider, Focus Dimmer for sidebars, and a distraction-free Reader View.</p>
       </div>
       <div class="card">
-        <h3>⚡ Instant Page Digest</h3>
-        <p>Extracts key takeaways and estimated reading time from long articles locally inside your browser—no account or cloud upload required.</p>
+        <h3>🛡️ Tracker & Clutter Shield</h3>
+        <p>Blocks third-party analytics trackers locally via Manifest V3 declarative rules, collapses layout clutter, and restores disabled page scrolling.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Instant Local Page Digest</h3>
+        <p>Extracts key takeaways and estimated reading time from long articles directly inside your browser—no account or cloud upload required.</p>
       </div>
     </div>
   </section>
 
   <section id="pricing" class="section container">
-    <h2 class="section-title">Simple, Transparent Pricing</h2>
-    <p class="section-sub">Start free forever, or unlock the full Pro suite across up to 3 devices.</p>
+    <h2 class="section-title">Pay Once, Own It Forever</h2>
+    <p class="section-sub">Install free from the Chrome Web Store and unlock Lifetime Pro in 1 click inside the extension.</p>
     <div class="pricing-grid">
       <div class="price-card">
         <h3>Free Starter</h3>
         <div class="price">$0 <span>/ forever</span></div>
         <ul class="list">
-          <li>✓ Network Ad & Tracker Blocker</li>
-          <li>✓ Duplicate Tab Closer & Smart Dark Mode</li>
-          <li>✓ Page Zoom & Text Scale</li>
+          <li>✓ Duplicate Tab Closer & Manual Ungrouping</li>
+          <li>✓ Smart Dark Mode & Page Text Zoom</li>
+          <li>✓ Native Tracker & Clutter Shield</li>
           <li>✓ Up to 2 Saved Tab Sessions</li>
           <li>✓ 3 Article Digests per Day</li>
         </ul>
-        <a href="#privacy" class="btn btn-primary" style="width:100%;justify-content:center;">Included in Extension</a>
+        <a href="https://chromewebstore.google.com" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Install Free Extension</a>
       </div>
 
       <div class="price-card featured">
-        <div class="tag">MOST POPULAR</div>
+        <div class="tag">LIFETIME DEAL</div>
         <h3>TabTamer Pro</h3>
-        <div class="price">$4.99<span>/mo</span> or $19 <span>lifetime</span></div>
+        <div class="price">$1.99 <span>one-time payment</span></div>
         <ul class="list">
           <li>✓ Everything in Free Starter</li>
-          <li>✓ Unlimited Session Vault + JSON Backup</li>
+          <li>✓ Unlimited Session Vault + JSON Export</li>
           <li>✓ Unlimited Daily Digests + Reader Mode</li>
           <li>✓ 1-Click Auto-Group & Sleep Idle Tabs</li>
-          <li>✓ Cookie Cleaner, Popup Zapper, Focus & Night Tint</li>
-          <li>✓ Activate on up to 3 Browsers/Devices</li>
+          <li>✓ Clutter Cleaner, Overlay Zapper, Focus & Night Tint</li>
+          <li>✓ Instant Email Restore Across Your Browsers</li>
         </ul>
-        <a href="https://hk-digital.lemonsqueezy.com/checkout/buy/75f87dec-3c15-45c5-9bca-44f539d6b6b9" target="_blank" rel="noopener" class="btn btn-gold" style="width:100%;justify-content:center;">Buy Pro License Key</a>
+        <a href="https://chromewebstore.google.com" target="_blank" rel="noopener" class="btn btn-gold" style="width:100%;justify-content:center;">Install & Upgrade Inside App</a>
       </div>
+    </div>
+  </section>
+
+  <section id="terms" class="section container" style="padding-bottom: 10px;">
+    <div class="privacy-box">
+      <h2>Terms of Service & Refund Policy</h2>
+      <h3>1. Software License</h3>
+      <p>Purchasing TabTamer Pro ($1.99 USD one-time via ExtensionPay) grants a perpetual license tied to your purchase email, restorable across your personal browsers.</p>
+      <h3>2. 14-Day Refund Policy</h3>
+      <p>If you are unsatisfied with TabTamer Pro within 14 days of purchase, contact HK Digital with your ExtensionPay receipt email for a full refund.</p>
     </div>
   </section>
 
@@ -310,20 +278,20 @@
       <ul>
         <li><strong>Tabs & Saved Sessions:</strong> All tab metadata and Session Vault entries are stored exclusively in your browser's local storage (<code>chrome.storage.local</code>).</li>
         <li><strong>Page Digest & Visual Filters:</strong> Article extraction, dark mode, night tint, and reader view run entirely inside your browser's local memory. No page text is ever uploaded.</li>
-        <li><strong>Ad & Tracker Blocking:</strong> Handled locally by the browser's built-in <code>declarativeNetRequest</code> API using static rules.</li>
+        <li><strong>Network Rules:</strong> Handled locally by the browser's built-in <code>declarativeNetRequest</code> API using static bundled rules.</li>
       </ul>
 
-      <h3>2. Payments & License Activation</h3>
-      <p>Pro license purchases are processed securely by Lemon Squeezy (Merchant of Record). When you enter a license key inside the extension, only the license key string and browser platform name are sent to Lemon Squeezy's license validation API (<code>api.lemonsqueezy.com</code>) to verify activation status and device limits.</p>
+      <h3>2. Payments & License Sync</h3>
+      <p>Pro upgrades are processed securely by ExtensionPay (<code>extensionpay.com</code>) and Stripe. When you upgrade or restore a purchase, ExtensionPay verifies your paid status via <code>https://extensionpay.com</code> without accessing your browsing history.</p>
 
       <h3>3. Contact & Support</h3>
-      <p>For billing help, license resets, or privacy questions, contact HK Digital via your Lemon Squeezy order receipt or at <strong>support@hkdigital.example.com</strong>.</p>
+      <p>For billing help, purchase restoration, or privacy questions, contact HK Digital at <strong>support@hkdigital.example.com</strong>.</p>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      © 2026 HK Digital • TabTamer Pro Browser Extension &nbsp;•&nbsp; <a href="#privacy">Privacy Policy</a>
+      © 2026 HK Digital • TabTamer Pro Browser Extension &nbsp;•&nbsp; <a href="#terms">Terms & Refunds</a> &nbsp;•&nbsp; <a href="#privacy">Privacy Policy</a>
     </div>
   </footer>
 
